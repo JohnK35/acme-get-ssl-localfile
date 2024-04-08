@@ -10,7 +10,12 @@ variable "email_address" {
 
 variable "domain_name" {
   type        = string
-  description = "Domain name for the acme registration"
+  description = "Domain name for the acme registration, you can register with wildcard e.g. *.domain.com"
+}
+
+variable "file_cert_name" {
+  type        = string
+  description = "Certificate name for the acme registration that you need to save"
 }
 
 variable "dns_alt_names" {
